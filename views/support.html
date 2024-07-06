@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Support</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/Favicon/Favicon 1.png" rel="icon">
+  <link href="assets/img/Favicon/Favicon 5.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/newmain.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top" data-scrollto-offset="0" style="background-color: #4C4C4C;">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+
+    <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+
+    <h1 style="color: #ffffff;"> <strong style="color: #20B2FF;">BLUE</strong><strong>TICK</strong></h1>
+    </a>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto navtext" href="/user?username=<%= username %>">Home</a></li>
+        <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul>
+           <li><a class="nav-link nav-profile d-flex align-items-center pe-0 Borders" href="#" data-bs-toggle="dropdown" >
+              <img src="assets/img/BT_ICONS/Personal_Shipment.png" alt="Profile" class="imagess" >
+              <span class="navtext">Personal Courier</span>
+            </a></li> 
+            <li><a class="nav-link nav-profile d-flex align-items-center pe-0 Borders" href="#" data-bs-toggle="dropdown">
+              <img src="assets/img/BT_ICONS/Business_Shipment.png" alt="Profile" class="imagess">
+              <span class="navtext">Business Shipment</span>
+
+            </a></li> 
+            <li><a class="nav-link nav-profile d-flex align-items-center pe-0 Borders" href="#" data-bs-toggle="dropdown">
+              <img src="assets/img/BT_ICONS/Express_Parcel.png" alt="Profile" class="imagess">
+              <span class="navtext">Express Parcel</span>
+
+            </a></li> 
+            <li><a class="nav-link nav-profile d-flex align-items-center pe-0 Borders" href="#" data-bs-toggle="dropdown">
+              <img src="assets/img/BT_ICONS/Fully_Loaded.png" alt="Profile" class="imagess">
+              <span class="navtext">Fully Loaded</span>
+            </a></li> 
+            <li><a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+              <img src="assets/img/BT_ICONS/Partially_Loaded.png" alt="Profile" class="imagess">
+              <span class="navtext">Partially Loaded</span>
+            </a></li>  
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto navtext" href="/about?username=<%= username %>">About Us</a></li>
+       
+        <li><a class="nav-link scrollto navtext" href="/user?username=<%= username %>">Track</a></li>
+        <li><a class="nav-link scrollto navtext" href="/support?username=<%= username %>">Support</a></li>
+
+
+        <li><a class="dropdown btn-getstarted " href="Request_delivery.html"><span style="margin-right: 5px;">Ship Now</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+         </li>
+      <i class="bi bi-list mobile-nav-toggle d-none"></i>
+   
+    <li class="nav-item dropdown" style="list-style: none;">
+
+      <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+        <i class="bi bi-bell"></i>
+        <span class="badge bg-primary badge-number">4</span>
+      </a><!-- End Notification Icon -->
+
+      <ul class="something">
+        <li class="dropdown-header">
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="notification-item">
+          <i class="bi bi-exclamation-circle text-warning"></i>
+          <div class="notification-text">
+            <h4 style="color: #20B2FF;">Lorem Ipsum</h4>
+            <p>Quae dolorem earum veritatis oditseno</p>
+            <p>30 min. ago</p>
+          </div>
+        </li>
+
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="notification-item">
+          <i class="bi bi-x-circle text-danger"></i>
+          <div>
+            <h4 style="color: #20B2FF;">Atque rerum nesciunt</h4>
+            <p>Quae dolorem earum veritatis oditseno</p>
+            <p>1 hr. ago</p>
+          </div>
+        </li>
+
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="notification-item">
+          <i class="bi bi-check-circle text-success"></i>
+          <div>
+            <h4 style="color: #20B2FF;">Sit rerum fuga</h4>
+            <p>Quae dolorem earum veritatis oditseno</p>
+            <p>2 hrs. ago</p>
+          </div>
+        </li>
+
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="notification-item">
+          <i class="bi bi-info-circle text-primary"></i>
+          <div>
+            <h4 style="color: #20B2FF;">Dicta reprehenderit</h4>
+            <p>Quae dolorem earum veritatis oditseno</p>
+            <p>4 hrs. ago</p>
+          </div>
+        </li>
+
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li class="dropdown-footer">
+          <a href="#">Show all notifications</a>
+        </li>
+
+      </ul><!-- End Notification Dropdown Items -->
+
+    </li><!-- End Notification Nav -->
+
+    <li class="nav-item dropdown" style="list-style: none;">
+
+      <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+        <i class="bi bi-chat-left-text"></i>
+        <span class="badge bg-success badge-number">3</span>
+      </a><!-- End Messages Icon -->
+
+      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages " >
+        <li class="dropdown-header">
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="message-item">
+          <a href="#">
+            <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+            <div style="color: #ffffff;">
+              <h4 style="color: #20B2FF;">Maria Hudson</h4>
+              <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+              <p>4 hrs. ago</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="message-item">
+          <a href="#">
+            <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+            <div style="color: #ffffff;">
+              <h4 style="color: #20B2FF;">Anna Nelson</h4>
+              <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+              <p>6 hrs. ago</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="message-item">
+          <a href="#">
+            <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+            <div style="color: #ffffff;">
+              <h4 style="color: #20B2FF;">David Muldon</h4>
+              <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+              <p>8 hrs. ago</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="dropdown-footer">
+          <a href="#">Show all messages</a>
+        </li>
+
+      </ul><!-- End Messages Dropdown Items -->
+
+    </li><!-- End Messages Nav -->
+
+    <li class="nav-item dropdown pe-3" style="list-style: none;">
+
+      <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+        <img src="assets/img/profile-img.png" alt="Profile" class="rounded-circle">
+        <span class="d-none d-md-block ps-2" id="usernameDropdown"><%= username%></span>
+      </a><!-- End Profile Iamge Icon -->
+
+      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+        <li>
+          <a class="dropdown-item d-flex align-items-center" href="/profile?username=<%= username %>">
+            <!-- <i class="bi bi-person" style="color: #20B2FF;"></i> -->
+            <span style="color: #ffffff;">My Profile</span>
+          </a>
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li>
+          <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+            <!-- <i class="bi bi-gear" style="color: #20B2FF;"></i> -->
+            <span style="color: #ffffff;">Account Settings</span>
+          </a>
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li>
+          <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+            <!-- <i class="bi bi-question-circle" style="color: #20B2FF;"></i> -->
+            <span style="color: #ffffff;">Need Help?</span>
+          </a>
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li>
+          <a class="dropdown-item d-flex align-items-center" href="/">
+            <!-- <i class="bi bi-box-arrow-right" style="color: #20B2FF;"></i> -->
+            <span style="color: #ffffff;">Sign Out</span>
+          </a>
+        </li>
+        </ul>
+        </li>
+        </ul></nav></div></header>
+
+  <main id="main">
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+        <div class="section-header">
+          <span>Frequently Asked <strong>Questions</strong></span>
+          <h2>Frequently Asked <strong>Questions</strong></h2>
+        </div>
+        <div class="container-fluid" data-aos="fade-up">
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+  
+              <div class="accordion accordion-flush px-xl-5" id="faqlist">
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      How can I make an online Truck booking?
+                    </button>
+                  </h3>
+                  <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      Our booking technology streamlines the procedure. All you need to do is download our WheelsEye truck booking app. Add pickup and destination location. Then, select the weight of goods, type, and size of the truck.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                      <i class="bi bi-question-circle question-icon"></i>
+                     How can I check my transportation cost?
+                    </button>
+                  </h3>
+                  <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      Our transport company in India has provided our customers with a handy cost estimation tool. Through this, you can easily check your pricing estimation by choosing a location and the size of truck required to transport your goods. If you still have any issues, feel free to reach our experts.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                      <i class="bi bi-question-circle question-icon"></i>
+                     How can BLUETICK benefit my business?
+                    </button>
+                  </h3>
+                  <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      By employing us, you and your business can avail yourself of the following perks
+  ∙ Competitive prices
+  ∙ Save time by booking trucks online
+  ∙ Get access to 20+ lakh trucks
+  ∙ Monitor your vehicle with real-time GPS tracking
+  ∙ All categories of trucks that serve across PAN-India
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      What is Full truckload service?
+                    </button>
+                  </h3>
+                  <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      Full-Truckload services is a truck transportation service needed by SMEs small-to-medium enterprises and large firms who want to transport huge goods and loads across long distances. The whole available space in a truck is allotted to a single customer to transport their goods.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      How will I get my invoice and bill?
+                    </button>
+                  </h3>
+                  <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      You will receive your invoice on your registered WhatsApp number, and you can also download it from the app.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      What is Full truckload service?
+                    </button>
+                  </h3>
+                  <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      Full-Truckload services is a truck transportation service needed by SMEs small-to-medium enterprises and large firms who want to transport huge goods and loads across long distances. The whole available space in a truck is allotted to a single customer to transport their goods.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      Can I place a booking with multi-point pick up and drop?
+                    </button>
+                  </h3>
+                  <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      Yes, through our transport company app, you make a special request at the time of booking and add multi-point as per your requirement.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      Can I cancel my booking? Is there any cancellation fee?
+                    </button>
+                  </h3>
+                  <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      Yes, you can cancel your booking on the app without any hassle. However, you must cancel your booking before the vehicle reaches the loading point to avoid any cancellation fees.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      Can I change the vehicle type after it has reached the pickup point?
+                    </button>
+                  </h3>
+                  <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      No, you can not change the vehicle after it reaches the pickup point. It is advised to choose and select the type of vehicle as per your freight requirements.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      Do you also provide loading/Unloading & packing services?
+                    </button>
+                  </h3>
+                  <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      No, we do not provide loading/unloading & packing services. After booking, our verified truck operators will reach the pickup points for loading.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+  
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                      <i class="bi bi-question-circle question-icon"></i>
+                     Are there any additional charge or waiting charges?
+                    </button>
+                  </h3>
+                  <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      In case the loading of the vehicle exceeds 24 hours, then detention charges are charged. To avoid it, you need to load the truck within 24 hours when the truck reaches the pickup point.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      What types of trucks do you have?
+                    </button>
+                  </h3>
+                  <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      Here is the list of trucks we have to transport your goods from Delhi NCR to PAN India:
+  
+                      ∙ 32 ft SXL Container Trucks
+                      ∙ 32 ft MXL Container Trucks
+                      ∙ 14-24ft Container Trucks
+                      ∙ 14-22 ft Open Trucks
+                      ∙ 10 tyre/ 12 tyre/ 14 tyre Open Trucks
+                      ∙ Pickup Trucks
+                      ∙ Trailer Trucks
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      Can I book a truck in advance?
+                    </button>
+                  </h3>
+                  <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      <i class="bi bi-question-circle question-icon"></i>
+                        Yes, through our online booking app, you can easily make a booking in advance as per your transportation needs.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+  
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+  
+              <div class="accordion accordion-flush px-xl-5" id="faqlist">
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      When do I have to make the payment?
+                    </button>
+                  </h3>
+                  <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                    Once the vehicle reaches the loading point, you will have to make the full payment of your goods transportation services through the app.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      When & how will I get my POD?
+                    </button>
+                  </h3>
+                  <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                     When your goods will be delivered safely and reliably, you will receive proof of delivery on your app. You can check and download it from there.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      How can I track my vehicle?
+                    </button>
+                  </h3>
+                  <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      We provide real-time GPS tracking through our WheelsEye truck booking app. You can anytime track your vehicle within a few clicks.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      How quickly I get a quote?
+                    </button>
+                  </h3>
+                  <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      <i class="bi bi-question-circle question-icon"></i>
+                      You can get a price estimate instantly on our website/app by using fare calculator Option.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                      <i class="bi bi-question-circle question-icon"></i>
+                     What type of material types can I transport?
+                    </button>
+                  </h3>
+                  <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      We deliver all types of goods, except oil and perishable items, bio hazardous, nuclear waste.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                      <i class="bi bi-question-circle question-icon"></i>
+                     What are the payment methods available?
+                    </button>
+                  </h3>
+                  <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                    We accept payment transfers via
+  
+                              ∙ NEFT
+                              ∙ IMPS
+                              ∙ Net Banking
+                              ∙ UPI
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                      <i class="bi bi-question-circle question-icon"></i>
+                     What is the surely that you will deliver my goods safely and securely?
+                    </button>
+                  </h3>
+                  <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      BLUETICK is committed to providing safe and top-quality goods transportation services. All our vehicles are GPS enabled, and all truck operators are KYC verified. We constantly monitor all the vehicles in transit and take immediate action in case of unnecessary stoppages or suspicious behavior. Besides that, we also offer insurance cover which you can additionally buy from the app.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                      <i class="bi bi-question-circle question-icon"></i>
+                     What can I contact the driver?
+                    </button>
+                  </h3>
+                  <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                    You can get a call driver option on our truck booking app which you can directly contact the driver without any hassle.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                      <i class="bi bi-question-circle question-icon"></i>
+                     How do I raise a ticket If I have any issues?
+                    </button>
+                  </h3>
+                  <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      In case you have any concerns or are facing any issues, you can easily raise a ticket from the ticket option provided on the app.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                      <i class="bi bi-question-circle question-icon"></i>
+                     Can I share my tracking details with someone else?
+                    </button>
+                  </h3>
+                  <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      Yes, you can share your tracking details with someone else.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                      <i class="bi bi-question-circle question-icon"></i>
+                     When will my goods be delivered?
+                    </button>
+                  </h3>
+                  <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      Our transport company has provided real-time tracking on the app. You will be getting the expected time updates time-to-time.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                      <i class="bi bi-question-circle question-icon"></i>
+                     Can I check the prices without booking a truck?
+                    </button>
+                  </h3>
+                  <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      Yes. You can check the price quickly on our app/website using Fare Calculator.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                      <i class="bi bi-question-circle question-icon"></i>
+                     When do I have to make the payments?
+                    </button>
+                  </h3>
+                  <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                    <div class="accordion-body">
+                      We deliver all types of goods, except oil and perishable items, bio hazardous, nuclear waste.
+                    </div>
+                  </div>
+                </div><!-- # Faq item-->
+  
+              </div>
+  
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End F.A.Q Section -->
+
+
+
+  </main>
+
+     <!-- ======= Footer ======= -->
+     <footer id="footer">
+      <div class="footer-top" style="background-color: #4c4c4c;">
+        <div class="container" >
+          <div class="row">
+  
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-info">
+          <a href="index.html">     <img src="assets/img/Logo/Transparent_BG.png" alt="" class="img-fluid" height="250px" width="250px"></a> 
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4 style="color: #20B2FF;">Contact us</h4>
+              <p>NH 66, Srinivasnagar<br>
+                Surathkal, Mangalore<br>
+                Karnataka 575025<br>
+                <strong>Phone:</strong>  +91 8279422731<br>
+                <strong>Email:</strong>  aashish@bluetick.org.in<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://twitter.com/arius_tech" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/arius_tech/" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="www.linkedin.com/in/arius-350283285" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 footer-links" id="stop">
+              <h4 style="color: #20B2FF; float: left;">Useful Links</h4><br><br>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="aboutus.html">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="support.html">Support</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#stop">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#stop">Privacy policy</a></li>
+              </ul>
+            </div> 
+  
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4 style="color: #20B2FF; float: left;">Our Services</h4><br><br>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="Request_delivery.html">Personal Courier</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="Request_delivery.html">Business Shipment</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="graphics.html">Track</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="fare_calculator.html">Fare Calculator</a></li>
+  
+              </ul>
+            </div>
+  
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><a href="index.html"><span style="color: #ffffff;">BLUE<span style="color: #20B2FF;">TICK</span></span></a></strong>. All Rights Reserved
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+  
+  
+    <!-- Scroll Top Button -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

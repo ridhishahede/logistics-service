@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Home - Append Bootstrap Temlate</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/Favicon/Favicon 1.png" rel="icon">
+  <link href="assets/img/Favicon/Favicon 5.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/newmain.css" rel="stylesheet">
+  <!-- Include Bootstrap and Font Awesome in your HTML -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-lSNlYB+iG5SD0lAs6enQs7JtFjM+yo7Rv5Vm+8vbe+n2RlEiDKfyZiXnCs6tQI7x" crossorigin="anonymous">
+
+</head>
+
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu" style="background-color: black;">
+
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top" data-scrollto-offset="0" style="background-color: #4C4C4C; color: white;">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+
+    <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+
+    <h1 style="color: #ffffff;"> <strong style="color: #20B2FF;">BLUE</strong><strong>TICK</strong></h1>
+    </a>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto navtext" href="/admin?username=<%= username %>">Home</a></li>
+        <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul>
+           <li><a class="nav-link nav-profile d-flex align-items-center pe-0 Borders" href="#" data-bs-toggle="dropdown" >
+              <img src="assets/img/BT_ICONS/Personal_Shipment.png" alt="Profile" class="imagess" >
+              <span class="navtext">Personal Courier</span>
+            </a></li> 
+            <li><a class="nav-link nav-profile d-flex align-items-center pe-0 Borders" href="#" data-bs-toggle="dropdown">
+              <img src="assets/img/BT_ICONS/Business_Shipment.png" alt="Profile" class="imagess">
+              <span class="navtext">Business Shipment</span>
+
+            </a></li> 
+            <li><a class="nav-link nav-profile d-flex align-items-center pe-0 Borders" href="#" data-bs-toggle="dropdown">
+              <img src="assets/img/BT_ICONS/Express_Parcel.png" alt="Profile" class="imagess">
+              <span class="navtext">Express Parcel</span>
+
+            </a></li> 
+            <li><a class="nav-link nav-profile d-flex align-items-center pe-0 Borders" href="#" data-bs-toggle="dropdown">
+              <img src="assets/img/BT_ICONS/Fully_Loaded.png" alt="Profile" class="imagess">
+              <span class="navtext">Fully Loaded</span>
+            </a></li> 
+            <li><a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+              <img src="assets/img/BT_ICONS/Partially_Loaded.png" alt="Profile" class="imagess">
+              <span class="navtext">Partially Loaded</span>
+            </a></li>  
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto navtext" href="/about?username=<%= username %>">About Us</a></li>
+       
+        <li><a class="nav-link scrollto navtext" href="/user"?username=<%= username %>>Track</a></li>
+        <li><a class="nav-link scrollto navtext" href="/support?username=<%= username %>">Support</a></li>
+
+
+        <li><a class="dropdown btn-getstarted " href="Request_delivery.html"><span style="margin-right: 5px;">Ship Now</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+         </li>
+      <i class="bi bi-list mobile-nav-toggle d-none"></i>
+   
+    <li class="nav-item dropdown" style="list-style: none;">
+
+      <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+        <i class="bi bi-bell"></i>
+        <span class="badge bg-primary badge-number">4</span>
+      </a><!-- End Notification Icon -->
+
+      <ul class="something">
+        <li class="dropdown-header">
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="notification-item">
+          <i class="bi bi-exclamation-circle text-warning"></i>
+          <div class="notification-text">
+            <h4 style="color: #20B2FF;">Lorem Ipsum</h4>
+            <p>Quae dolorem earum veritatis oditseno</p>
+            <p>30 min. ago</p>
+          </div>
+        </li>
+
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="notification-item">
+          <i class="bi bi-x-circle text-danger"></i>
+          <div>
+            <h4 style="color: #20B2FF;">Atque rerum nesciunt</h4>
+            <p>Quae dolorem earum veritatis oditseno</p>
+            <p>1 hr. ago</p>
+          </div>
+        </li>
+
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="notification-item">
+          <i class="bi bi-check-circle text-success"></i>
+          <div>
+            <h4 style="color: #20B2FF;">Sit rerum fuga</h4>
+            <p>Quae dolorem earum veritatis oditseno</p>
+            <p>2 hrs. ago</p>
+          </div>
+        </li>
+
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="notification-item">
+          <i class="bi bi-info-circle text-primary"></i>
+          <div>
+            <h4 style="color: #20B2FF;">Dicta reprehenderit</h4>
+            <p>Quae dolorem earum veritatis oditseno</p>
+            <p>4 hrs. ago</p>
+          </div>
+        </li>
+
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li class="dropdown-footer">
+          <a href="#">Show all notifications</a>
+        </li>
+
+      </ul><!-- End Notification Dropdown Items -->
+
+    </li><!-- End Notification Nav -->
+
+    <li class="nav-item dropdown" style="list-style: none;">
+
+      <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+        <i class="bi bi-chat-left-text"></i>
+        <span class="badge bg-success badge-number">3</span>
+      </a><!-- End Messages Icon -->
+
+      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages " >
+        <li class="dropdown-header">
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="message-item">
+          <a href="#">
+            <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+            <div style="color: #ffffff;">
+              <h4 style="color: #20B2FF;">Maria Hudson</h4>
+              <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+              <p>4 hrs. ago</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="message-item">
+          <a href="#">
+            <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+            <div style="color: #ffffff;">
+              <h4 style="color: #20B2FF;">Anna Nelson</h4>
+              <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+              <p>6 hrs. ago</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="message-item">
+          <a href="#">
+            <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+            <div style="color: #ffffff;">
+              <h4 style="color: #20B2FF;">David Muldon</h4>
+              <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+              <p>8 hrs. ago</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li class="dropdown-footer">
+          <a href="#">Show all messages</a>
+        </li>
+
+      </ul><!-- End Messages Dropdown Items -->
+
+    </li><!-- End Messages Nav -->
+
+    <li class="nav-item dropdown pe-3" style="list-style: none;">
+
+      <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+        <img src="assets/img/profile-img.png" alt="Profile" class="rounded-circle">
+        <span class="d-none d-md-block ps-2" id="usernameDropdown"><%= username%></span>
+      </a><!-- End Profile Iamge Icon -->
+
+      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+        <li>
+          <a class="dropdown-item d-flex align-items-center" href="/profile?username=<%= username %>">
+            <!-- <i class="bi bi-person" style="color: #20B2FF;"></i> -->
+            <span style="color: #ffffff;">My Profile</span>
+          </a>
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li>
+          <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+            <!-- <i class="bi bi-gear" style="color: #20B2FF;"></i> -->
+            <span style="color: #ffffff;">Account Settings</span>
+          </a>
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li>
+          <a class="dropdown-item d-flex align-items-center" href="/support?username=<%= username %>">
+            <!-- <i class="bi bi-question-circle" style="color: #20B2FF;"></i> -->
+            <span style="color: #ffffff;">Need Help?</span>
+          </a>
+        </li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+
+        <li>
+          <a class="dropdown-item d-flex align-items-center" href="/">
+            <!-- <i class="bi bi-box-arrow-right" style="color: #20B2FF;"></i> -->
+            <span style="color: #ffffff;">Sign Out</span>
+          </a>
+        </li>
+        </ul>
+        </li>
+        </ul></nav></div></header>
+
+        <div style="margin-top: 150px;">
+
+        </div>
+
+        <div class="container-fluid mt-5" style="margin-top: 120px;">
+            <div class="card border-dark" mx-auto>
+                <div class="card-header bg-dark text-white">
+                    <h1 class="mb-0">Registered Companies</h1>
+                </div>
+                <div class="card-body">
+                    <!-- Search bar with an icon -->
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Search by Company name">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+                    <table border="1" class="table table-bordered table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>User Name</th>
+                                <th>Company Name</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Address</th>
+                                <th>Date of registration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% register.forEach(register => { %>
+                                <tr>
+                                    <td><%= register.user_name %></td>
+                                    <td><%= register.company_name %></td>
+                                    <td><%= register.email %></td>
+                                    <td><%= register.phone_no %></td>
+                                    <td><%= register.address1 %>, <%= register.address2 %>, <%= register.city %></td>
+                                    <td><%= register.createdAt %></td>
+                                </tr>
+                            <% }); %>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            document.getElementById('searchInput').addEventListener('input', function () {
+                const searchTerm = this.value.toLowerCase();
+                const rows = document.querySelectorAll('tbody tr');
+        
+                rows.forEach(row => {
+                    const companyName = row.querySelector('td:nth-child(2)').innerText.toLowerCase();
+                    if (companyName.includes(searchTerm)) {
+                        row.style.display = ''; // Show the row if the company name includes the search term
+                    } else {
+                        row.style.display = 'none'; // Hide the row otherwise
+                    }
+                });
+            });
+        </script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pages / Login - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    /* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.demo-bg {
+  z-index: -1;
+  opacity: 0.9;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+form .input-field {
+  flex-direction: row;
+  column-gap: 10px;
+}
+.input-field input {
+  height: 45px;
+  width: 42px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.input-field input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+  display: none;
+}
+form button {
+  margin-top: 25px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  padding: 9px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  pointer-events: none;
+  background: #6e93f7;
+  transition: all 0.2s ease;
+}
+form button.active {
+  background: #20b2ff;
+  pointer-events: auto;
+}
+form button:hover {
+  background: #20b2ff;
+  opacity: 0.8;
+}
+.text {
+    color: #ffffff;
+}
+  </style>
+
+</head>
+
+<body>
+    <img class="demo-bg" src="assets/img/Homepage/Untitled design (5).png" alt="">
+
+  <main>
+    <div class="container">
+
+      <section class="section register d-flex flex-column align-items-center justify-content-center" style="margin-top: 100px;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+
+              <div class="card mb-3" style="background-color: #4c4c4c; border-radius: 18px;">
+                
+
+                <div class="card-body" style="background-color: #4c4c4c; border-radius: 18px;">
+                   
+
+                  <div class="pt-4 pb-2">
+                    <h5 class="card-title text-center pb-0 fs-4" style="color: #20b2ff;">Login to Your Account</h5>
+                    <p class="text-center small text">Enter your Mobile Number & OTP</p>
+                  </div>
+
+                  <form class="row g-3 needs-validation" action="/login" method="POST" novalidate>
+                    <div class="col-12">
+                      <label for="yourUsername" class="form-label text">Mobile Number</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">+91</span>
+                        <input type="tel" name="phonenumber" class="form-control" id="yourUsername" maxlength="10" required>
+                        <div class="invalid-feedback text">Please enter your Mobile Number.</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label for="password" class="form-label text">Password</label>
+                      <input type="password" name="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="col-12">
+                      <button id="login-btn" type="submit">Login</button>
+                    </div>
+                    <br>
+                    <div class="col-12">
+                      <p class="small mb-0" style="color: #fff;">Don't have account? <a href="/signup" style="color: #20b2ff;">Create an account</a></p>
+                    </div>
+                  </form>
+                  
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+
+              <div class="card mb-3" style="background-color: #fff; border-radius: 18px;">
+                <button style="background-color: #fff; border-radius: 18px; align-items: center; color: #ffffff; width: 140px; height: 50px;">
+                  <a href="/adminlogin"><strong>Admin-Login</strong></a>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+    </div>
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <!-- <script src="assets/js/main.js"></script> -->
+<!-- Template Main JS File -->
+<script>
+  function submitForm() {
+      // Get the form element
+      var form = document.querySelector('form');
+
+      // Submit the form
+      if (form) {
+          form.submit();
+      } else {
+          console.error('Form not found');
+      }
+  }
+
+  // Adding event listener to handle form submission on "Enter" key press
+  document.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+          submitForm();
+      }
+  });
+</script>
+
+  
+
+  
+  
+</body>
+
+</html>

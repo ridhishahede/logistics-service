@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<title>profile projects - Bootdey.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicons -->
+  <link href="assets/img/Favicon/Favicon 1.png" rel="icon">
+  <link href="assets/img/Favicon/Favicon 5.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/newmain.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+    	body{margin-top:20px;
+background:#f7f8fa;
+}
+
+.avatar-xxl {
+    height: 7rem;
+    width: 7rem;
+}
+
+.card {
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 2px 3px #eaedf2;
+    box-shadow: 0 2px 3px #eaedf2;
+}
+
+.pb-0 {
+    padding-bottom: 0!important;
+}
+
+.font-size-16 {
+    font-size: 16px!important;
+}
+.avatar-title {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #038edc;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 500;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.bg-soft-primary {
+    background-color: rgba(3,142,220,.15)!important;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+
+.nav-tabs-custom .nav-item .nav-link.active {
+    color: #038edc;
+}
+.nav-tabs-custom .nav-item .nav-link {
+    border: none;
+}
+.nav-tabs-custom .nav-item .nav-link.active {
+    color: #038edc;
+}
+
+.avatar-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 12px;
+}
+
+.border-end {
+    border-right: 1px solid #eff0f2 !important;
+}
+
+.d-inline-block {
+    display: inline-block!important;
+}
+
+.badge-soft-danger {
+    color: #f34e4e;
+    background-color: rgba(243,78,78,.1);
+}
+
+.badge-soft-warning {
+    color: #f7cc53;
+    background-color: rgba(247,204,83,.1);
+}
+
+.badge-soft-success {
+    color: #51d28c;
+    background-color: rgba(81,210,140,.1);
+}
+
+.avatar-group .avatar-group-item {
+    margin-left: -14px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.avatar-sm {
+    height: 2rem;
+    width: 2rem;
+}
+
+.nav-tabs-custom .nav-item {
+    position: relative;
+    color: #343a40;
+}
+
+.nav-tabs-custom .nav-item .nav-link.active:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.nav-tabs-custom .nav-item .nav-link::after {
+    content: "";
+    background: #038edc;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -2px;
+    -webkit-transition: all 250ms ease 0s;
+    transition: all 250ms ease 0s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.badge-soft-secondary {
+    color: #74788d;
+    background-color: rgba(116,120,141,.1);
+}
+
+.badge-soft-secondary {
+    color: #74788d;
+}
+
+.work-activity {
+    position: relative;
+    color: #74788d;
+    padding-left: 5.5rem
+}
+
+.work-activity::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 66px;
+    border-left: 1px solid rgba(3,142,220,.25)
+}
+
+.work-activity .work-item {
+    position: relative;
+    border-bottom: 2px dashed #eff0f2;
+    margin-bottom: 14px
+}
+
+.work-activity .work-item:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none
+}
+
+.work-activity .work-item::after,.work-activity .work-item::before {
+    position: absolute;
+    display: block
+}
+
+.work-activity .work-item::before {
+    content: attr(data-date);
+    left: -157px;
+    top: -3px;
+    text-align: right;
+    font-weight: 500;
+    color: #74788d;
+    font-size: 12px;
+    min-width: 120px
+}
+
+.work-activity .work-item::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: -26px;
+    top: 3px;
+    background-color: #fff;
+    border: 2px solid #038edc
+}
+
+
+    </style>
+</head>
+
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css" integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="container">
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top" data-scrollto-offset="0" style="background-color: #4C4C4C; color: #fff;">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+  
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+  
+      <h1 style="color: #ffffff;"> <strong style="color: #20B2FF;">BLUE</strong><strong>TICK</strong></h1>
+      </a>
+  
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto navtext" href="/user?username=<%= user.username %>">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+             <li><a class="nav-link nav-profile d-flex align-items-center pe-0 Borders" href="#" data-bs-toggle="dropdown" >
+                <img src="assets/img/BT_ICONS/Personal_Shipment.png" alt="Profile" class="imagess" >
+                <span class="navtext">Personal Courier</span>
+              </a></li> 
+              <li><a class="nav-link nav-profile d-flex align-items-center pe-0 Borders" href="#" data-bs-toggle="dropdown">
+                <img src="assets/img/BT_ICONS/Business_Shipment.png" alt="Profile" class="imagess">
+                <span class="navtext">Business Shipment</span>
+  
+              </a></li> 
+              <li><a class="nav-link nav-profile d-flex align-items-center pe-0 Borders" href="#" data-bs-toggle="dropdown">
+                <img src="assets/img/BT_ICONS/Express_Parcel.png" alt="Profile" class="imagess">
+                <span class="navtext">Express Parcel</span>
+  
+              </a></li> 
+              <li><a class="nav-link nav-profile d-flex align-items-center pe-0 Borders" href="#" data-bs-toggle="dropdown">
+                <img src="assets/img/BT_ICONS/Fully_Loaded.png" alt="Profile" class="imagess">
+                <span class="navtext">Fully Loaded</span>
+              </a></li> 
+              <li><a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                <img src="assets/img/BT_ICONS/Partially_Loaded.png" alt="Profile" class="imagess">
+                <span class="navtext">Partially Loaded</span>
+              </a></li>  
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto navtext" href="/about">About Us</a></li>
+         
+          <li><a class="nav-link scrollto navtext" href="/user">Track</a></li>
+          <li><a class="nav-link scrollto navtext" href="/support">Support</a></li>
+  
+  
+          <li><a class="dropdown btn-getstarted " href="Request_delivery.html"><span style="margin-right: 5px;">Ship Now</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+           </li>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+     
+      <li class="nav-item dropdown" style="list-style: none;">
+  
+        <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+          <i class="bi bi-bell"></i>
+          <span class="badge bg-primary badge-number">4</span>
+        </a><!-- End Notification Icon -->
+  
+        <ul class="something">
+          <li class="dropdown-header">
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+  
+          <li class="notification-item">
+            <i class="bi bi-exclamation-circle text-warning"></i>
+            <div class="notification-text">
+              <h4 style="color: #20B2FF;">Lorem Ipsum</h4>
+              <p>Quae dolorem earum veritatis oditseno</p>
+              <p>30 min. ago</p>
+            </div>
+          </li>
+  
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+  
+          <li class="notification-item">
+            <i class="bi bi-x-circle text-danger"></i>
+            <div>
+              <h4 style="color: #20B2FF;">Atque rerum nesciunt</h4>
+              <p>Quae dolorem earum veritatis oditseno</p>
+              <p>1 hr. ago</p>
+            </div>
+          </li>
+  
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+  
+          <li class="notification-item">
+            <i class="bi bi-check-circle text-success"></i>
+            <div>
+              <h4 style="color: #20B2FF;">Sit rerum fuga</h4>
+              <p>Quae dolorem earum veritatis oditseno</p>
+              <p>2 hrs. ago</p>
+            </div>
+          </li>
+  
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+  
+          <li class="notification-item">
+            <i class="bi bi-info-circle text-primary"></i>
+            <div>
+              <h4 style="color: #20B2FF;">Dicta reprehenderit</h4>
+              <p>Quae dolorem earum veritatis oditseno</p>
+              <p>4 hrs. ago</p>
+            </div>
+          </li>
+  
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li class="dropdown-footer">
+            <a href="#">Show all notifications</a>
+          </li>
+  
+        </ul><!-- End Notification Dropdown Items -->
+  
+      </li><!-- End Notification Nav -->
+  
+      <li class="nav-item dropdown" style="list-style: none;">
+  
+        <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+          <i class="bi bi-chat-left-text"></i>
+          <span class="badge bg-success badge-number">3</span>
+        </a><!-- End Messages Icon -->
+  
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages " >
+          <li class="dropdown-header">
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+  
+          <li class="message-item">
+            <a href="#">
+              <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+              <div style="color: #ffffff;">
+                <h4 style="color: #20B2FF;">Maria Hudson</h4>
+                <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+  
+          <li class="message-item">
+            <a href="#">
+              <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+              <div style="color: #ffffff;">
+                <h4 style="color: #20B2FF;">Anna Nelson</h4>
+                <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                <p>6 hrs. ago</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+  
+          <li class="message-item">
+            <a href="#">
+              <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+              <div style="color: #ffffff;">
+                <h4 style="color: #20B2FF;">David Muldon</h4>
+                <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                <p>8 hrs. ago</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+  
+          <li class="dropdown-footer">
+            <a href="#">Show all messages</a>
+          </li>
+  
+        </ul><!-- End Messages Dropdown Items -->
+  
+      </li><!-- End Messages Nav -->
+  
+      <li class="nav-item dropdown pe-3" style="list-style: none;">
+  
+        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+          <img src="assets/img/profile-img.png" alt="Profile" class="rounded-circle">
+          <span class="d-none d-md-block ps-2" id="usernameDropdown"><%= user.username %></span>
+        </a><!-- End Profile Iamge Icon -->
+  
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="/profile?username=<%= user.username %>">
+              <!-- <i class="bi bi-person" style="color: #20B2FF;"></i> -->
+              <span style="color: #ffffff;">My Profile</span>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+  
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <!-- <i class="bi bi-gear" style="color: #20B2FF;"></i> -->
+              <span style="color: #ffffff;">Account Settings</span>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+  
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+              <!-- <i class="bi bi-question-circle" style="color: #20B2FF;"></i> -->
+              <span style="color: #ffffff;">Need Help?</span>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+  
+          <li>
+            <a class="dropdown-item d-flex align-items-center" href="/">
+              <!-- <i class="bi bi-box-arrow-right" style="color: #20B2FF;"></i> -->
+              <span style="color: #ffffff;">Sign Out</span>
+            </a>
+          </li>
+          </ul>
+          </li>
+          </ul></nav></div></header>
+<div class="row" style="padding-top: 160px;">
+<div class="col-xl-8">
+<div class="card">
+<div class="card-body pb-0">
+<div class="row align-items-center" style="height: 200px;">
+<div class="col-md-3">
+<div class="text-center border-end">
+<!-- <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid avatar-xxl rounded-circle" alt> -->
+<h4 class="text-primary font-size-20 mt-3 mb-2"><%= user.username %></h4>
+<h5 class="text-muted font-size-13 mb-0">Client</h5>
+<br>
+</div>
+</div>
+<div class="col-md-9">
+<div class="ms-3">
+<div>
+<h4 class="card-title mb-2">Personal Details</h4>
+<div class="row my-4">
+<div class="col-md-12">
+<div>
+<p class="text-muted mb-2 fw-medium"><i class="mdi mdi-email-outline me-2"></i><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="501a313e233827353c3c231020223f3239337e333f3d">[email&#160;protected]</a>
+</p>
+<p class="text-muted fw-medium mb-0"><i class="mdi mdi-phone-in-talk-outline me-2"></i><%= user.phonenumber %>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="tab-content p-4">
+<div class="tab-pane active show" id="projects-tab" role="tabpanel">
+<div class="d-flex align-items-center">
+<div class="flex-1">
+<h4 class="card-title mb-4">Delivery Requests</h4>
+</div>
+</div>
+<div class="row" id="all-projects">
+    <% deliveryRequests.forEach(request => { %>
+<div class="col-md-6" id="request-1">
+<div class="card">
+<div class="card-body">
+<div class="d-flex mb-3">
+<div class="flex-grow-1 align-items-start">
+<div>
+<h6 class="mb-0 text-muted">
+<i class="mdi mdi-circle-medium text-danger fs-3 align-middle"></i>
+<span class="request-date"><%= request.createdAt %></span>
+</h6>
+</div>
+</div>
+<div class="dropdown ms-2">
+<a href="#" class="dropdown-toggle font-size-16 text-muted" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<i class="mdi mdi-dots-horizontal"></i>
+</a>
+<div class="dropdown-menu dropdown-menu-end">
+<a class="dropdown-item" href="javascript: void(0);" data-bs-toggle="modal" data-bs-target=".bs-example-new-project" onclick="editProjects('request-1')">Track_Order</a>
+<a class="dropdown-item" href="javascript: void(0);">Share</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item delete-item" onclick="deleteProjects('request-1')" data-id="request-1" href="/deleteRequest?requestID=<%= request.id %>">Delete</a>
+</div>
+</div>
+</div>
+<div class="mb-4">
+<h5 class="mb-1 font-size-17 team-title"><%= request.consignment_type %></h5>
+<p class="text-muted mb-0 team-description">Pickup Address: <%= request.pick_up_address1 %> <%= request.pick_up_address2 %> <%= request.pick_up_city %></p>
+<p class="text-muted mb-0 team-description">Drop Address: <%= request.drop_address1 %> <%= request.drop_address2 %> <%= request.drop_city %></p>
+</div>
+<div class="d-flex">
+<div class="align-self-end">
+    <% const currentDate = new Date(); %>
+    <% const pickupDate = new Date(request.pickup_date); %>
+    <% const timeDifference = pickupDate.getTime() - currentDate.getTime(); %>
+    <% const daysDifference = Math.floor(timeDifference / (1000 * 3600 * 24)); %>
+<span class="badge badge-soft-danger p-2 team-status">Status: <%= daysDifference > 0 ? 'Pending' : 'Completed' %></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<% }); %>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript">
+	
+</script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
